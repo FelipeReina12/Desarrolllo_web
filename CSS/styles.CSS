@@ -58,7 +58,6 @@ body {
     font-weight: bold;
     padding: 1rem;
 }
-
 .navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
