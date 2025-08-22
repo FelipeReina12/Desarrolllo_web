@@ -4,42 +4,67 @@
     --primario: #ffda38;
     --secundario: #00a759;
     --gris: #757575;
+    --gradiente: #dfe9f3;
     --fuente_principal: 3.8rem;
     --fuente_secundaria: 2.8rem;
-    --fuente_terciaria: 1.8rem;
+    --fuente_terciaria: 2.1rem;
 }
+
 html {
     font-size: 62.5%;
-      box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
+
 body {
     font-size: 16px;
     font-family: "Krub", sans-serif;
+    background-image: linear-gradient(to top, var(--gradiente) 0%, var(--blanco) 100%);
 }
+
 h1 {
     font-size: var(--fuente_principal);
 }
+
 h2 {
     font-size: var(--fuente_secundaria);
 }
+
 h3 {
     font-size: var(--fuente_terciaria);
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     text-align: center;
 }
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 .titulo span {
     color: var(--oscuro);
     font-size: 2rem;
 }
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto 0 auto;
 }
-.boton{
+
+.boton {
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
@@ -52,24 +77,29 @@ h1, h2, h3 {
     width: 90%;
     text-align: center;
 }
+
 @media (min-width: 768px) {
     .boton {
         width: auto;
     }
 }
+
 .nav-bg {
     background-color: var(--secundario);
 }
+
 .navegacion-principal {
     display: flex;
     flex-direction: column;
 }
+
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
     }
 }
+
 .navegacion-principal a {
     display: block;
     text-align: center;
@@ -79,17 +109,21 @@ h1, h2, h3 {
     font-weight: bold;
     padding: 1rem;
 }
+
 .navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
 }
-.hero{
+
+.hero {
     background-image: url(../imagenes/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
+
 .contenedor-hero {
     position: absolute;
     /* background-color: rgba(0, 0, 0, 0.7); */
@@ -101,10 +135,16 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
 }
-.contenedor-hero h2, p{
+
+.contenedor-hero h2 {
     color: var(--blanco);
 }
+
 .ubicacion {
     display: flex;
     align-items: flex-end;
+}
+
+.lugar {
+    color: var(--blanco);
 }
