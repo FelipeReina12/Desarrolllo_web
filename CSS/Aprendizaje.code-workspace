@@ -7,5 +7,7 @@
 			"path": "../../Curso_python"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Curso_python"
+	}
 }
